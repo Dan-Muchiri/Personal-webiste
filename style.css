@@ -1,4 +1,43 @@
-body {
-    background-color: aqua;
+.entire-page {
+    display: flex;
+    height: 100%;
+    background-color: blue ;
+    margin : 10px;
   }
-  
+.left-section{
+  background-color: brown;
+  flex: 1;
+}
+.right-section{
+  background-color: darkgreen;
+  flex:1;
+}
+.cv-info{
+  display: flex;
+  background-color: bisque;
+  width: 100%;
+  height: 60px;
+}
+.cv-name{
+  background-color: blueviolet;
+  flex: 1;
+  height: 100%;
+}
+.other-info{
+  background-color: cadetblue;
+  height: 100%;
+  flex: 1.8;
+}
+.about{
+  background-color: gold;
+}
+.about, .resume, .contact{
+  width: 100%;
+  height: 580px;
+}
+.resume{
+  background-color: red;
+}
+.contact{
+  background-color: coral;
+}
