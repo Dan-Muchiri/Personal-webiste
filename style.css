@@ -2,7 +2,7 @@ body{
   margin: 0;
 }
 ul{
-  padding-left:  20px;;
+  padding-left:  20px;
 }
 h1 {
   text-align: center;
@@ -30,6 +30,7 @@ a{
     height: 100%;
     background-color: #DDD0C8; 
     display: flex; 
+    flex-direction: column;
   }
 .right-section{
     background-color: #323232;
@@ -63,7 +64,7 @@ a{
   width: 18%; 
   border-radius: 65px;
   left: 2%; 
-  top: 4%; /
+  top: 4%; 
 }
 .cartoon2 {
   position: absolute;
@@ -122,6 +123,14 @@ a{
   left: 10.5%; 
   top: 89%; 
 }
+.pp-small-screen{
+  position: absolute;
+  width: 15%; 
+  border-radius: 20px;
+  left: 75%; 
+  top: 83%; 
+  display: none;
+}
 .cv-info{
   min-width: 790px;
   display: flex;
@@ -131,7 +140,7 @@ a{
   align-items: center;
   position: fixed;
   right: 418px;
-  left: 18px;
+  left: 0px;
   top: 0px;
   z-index: 5;
 }
@@ -249,37 +258,28 @@ button:active{
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 920px) {
   .right-section {
-    display: none; 
+    display: none;
   }
 
   .left-section {
-    width: 100%; 
+    width: 100%;
+    margin-top: 80px;
   }
-
-  .profile-pic {
-    width: 150px; 
-    border-radius: 15px;
-    position: relative;
-    margin: 20px auto; 
-}}
-
-button {
-  height: 40px; /* Adjust as needed */
-  padding: 0 20px; /* Adjust as needed */
-}
-
-.entire-page {
-  display: flex;
-  flex-direction: column; /* Adjust as needed */
-}
-
-
-h1 {
-  font-size: 2em; /* Adjust as needed */
-}
-
-h2 {
-  font-size: 1.5em; /* Adjust as needed */
+  .cv-info{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100px;
+    margin: 0;
+    width: 100%;
+  }
+  button{
+    height: 50px; 
+    padding: 0 20px;
+    border-radius: 25px;
+  }
+  .pp-small-screen{
+    display: block;
+  }
 }
