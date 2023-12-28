@@ -247,3 +247,39 @@ button:active{
 .references{
   display: flex;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .right-section {
+    display: none; 
+  }
+
+  .left-section {
+    width: 100%; 
+  }
+
+  .profile-pic {
+    width: 150px; 
+    border-radius: 15px;
+    position: relative;
+    margin: 20px auto; 
+}}
+
+button {
+  height: 40px; /* Adjust as needed */
+  padding: 0 20px; /* Adjust as needed */
+}
+
+.entire-page {
+  display: flex;
+  flex-direction: column; /* Adjust as needed */
+}
+
+
+h1 {
+  font-size: 2em; /* Adjust as needed */
+}
+
+h2 {
+  font-size: 1.5em; /* Adjust as needed */
+}
