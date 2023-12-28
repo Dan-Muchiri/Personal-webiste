@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  zoom: 1;
 }
 ul{
   padding-left:  20px;
@@ -55,7 +56,7 @@ a{
   min-width: 850px;
   width: 68%;
   height: 100%;
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 10px;
   position: relative;
 }
@@ -133,6 +134,7 @@ a{
 }
 .cv-info{
   min-width: 790px;
+  padding-top: 20px;
   display: flex;
   background-color: #DDD0C8;
   height: 60px;
@@ -281,5 +283,8 @@ button:active{
   }
   .pp-small-screen{
     display: block;
+  }
+  body{
+    zoom: 1;
   }
 }
