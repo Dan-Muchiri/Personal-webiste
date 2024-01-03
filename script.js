@@ -31,22 +31,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const phoneNumberLink = document.getElementById("phone-number");
-  phoneNumberLink.addEventListener('click', function (event) {
-    event.preventDefault();
-    copyPhoneNumber();
-  });
-
-  function copyPhoneNumber() {
-    const phoneNumber = phoneNumberLink.innerText;
-    const tempTextarea = document.createElement("textarea");
-    tempTextarea.value = phoneNumber;
-    document.body.appendChild(tempTextarea);
-    tempTextarea.select();
-    tempTextarea.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-    document.body.removeChild(tempTextarea);
-    alert("Phone number copied to clipboard: " + phoneNumber);
-  }
+    phoneNumberLink.addEventListener('click', function (event) {
+      event.preventDefault();
+      copyPhoneNumber();
+    });
+    
+    function copyPhoneNumber() {
+      const phoneNumber = phoneNumberLink.innerText;
+      navigator.clipboard.writeText(phoneNumber)
+        .then(() => alert("Phone number copied to clipboard: " + phoneNumber))
+        .catch(error => console.error('Unable to copy phone number', error));
+    }
   
   });
   
