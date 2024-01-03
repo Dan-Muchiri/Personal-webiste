@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     function scrollToSection(sectionId) {
       const section = document.getElementById(sectionId);
-      const headerHeight = 62;
+      const headerHeight = 80;
       const scrollPosition = section.offsetTop - headerHeight;
   
       window.scrollTo({
@@ -29,6 +29,24 @@ document.addEventListener("DOMContentLoaded", () => {
         behavior: 'smooth'
       });
     }
+
+    const phoneNumberLink = document.getElementById("phone-number");
+  phoneNumberLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    copyPhoneNumber();
+  });
+
+  function copyPhoneNumber() {
+    const phoneNumber = phoneNumberLink.innerText;
+    const tempTextarea = document.createElement("textarea");
+    tempTextarea.value = phoneNumber;
+    document.body.appendChild(tempTextarea);
+    tempTextarea.select();
+    tempTextarea.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    document.body.removeChild(tempTextarea);
+    alert("Phone number copied to clipboard: " + phoneNumber);
+  }
   
   });
   
