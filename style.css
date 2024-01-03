@@ -72,7 +72,7 @@ a{
   width: 15%; 
   border-radius: 75px;
   right: 3%; 
-  top: 15%; 
+  top: 16.1%; 
 }
 .cartoon3 {
   position: absolute;
@@ -141,10 +141,10 @@ a{
   color: #323232;
   align-items: center;
   position: fixed;
-  right: 418px;
   left: 0px;
   top: 0px;
   z-index: 5;
+  width: 70%;
 }
 .cv-name{
   flex: 1;
@@ -204,7 +204,7 @@ button:active{
 .left-section .welcome{
   height: 527px;
   font-size: 19px;
-  font-family:'Satisfy', cursive;;
+  font-family:'Satisfy', cursive;
 }
 .left-section .profile{
   height: 560px;
